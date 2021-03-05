@@ -1,0 +1,30 @@
+.container {
+    background-color: aqua;
+    display: grid;
+    padding: 10px;
+    gap: 10px;
+    text-align: center;
+    grid-auto-rows: minmax(150px, auto);
+    grid-template-areas: 
+    "h h h h h h"
+    "s s n n n n"
+    "s s c c c c"
+    "s s c c c c"
+    "s s c c c c"
+    "f f f f f f"
+    ;
+
+
+}
+.container div {
+    background-color: blue;
+    line-height:150px;
+    font-size: 2rem;
+    color: white;
+
+}
+.head {grid-area: h;}
+.nav {grid-area: n;}
+.side{grid-area: s;}
+.cont{grid-area: c;}
+.foo{grid-area: f;}
